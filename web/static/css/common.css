@@ -1,0 +1,257 @@
+body html{
+    height:100%;
+    margin: 0;
+    padding:0;
+    background-color: #00CCFF;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+/*******加载动画模块*****/
+#div-loading{
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index: 99;
+    display: none;
+    right:0;
+    bottom:0;
+    left:0;
+    filter:alpha(opacity=20);
+    opacity: 0.2;
+    background:#000000 url("../image/loading.gif") no-repeat 50% 50%;
+}
+/******公共头部样式*****/
+.top{
+    width:100%;
+    height:50px;
+    background-color: #006699;
+    color: #FFFFFF;
+    font-size: 15px;
+    overflow: hidden;
+}
+.top .left{
+    font-size: 16px;
+    width:35%;
+    float: left;
+    height:100%;
+}
+.top .center{
+    width:40%;
+    height:100%;
+    float: left;
+}
+.top .right{
+    width:25%;
+    font-size: 16px;
+    float: left;
+    height:100%;
+}
+.top .right li{
+    float: left;
+    width:95%;
+    padding-right: 50px;
+    text-align: right;
+    height:100%;
+    line-height: 50PX;
+}
+/*******登陆模块*******/
+#login-module{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#ffffff, #999999); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#ffffff, #999999); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#ffffff, #999999); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#ffffff, #999999); /* 标准的语法 */
+}
+#div-login{
+    width: 500px;
+    height:300px;
+    background-color: #f2f2f2;
+    margin:250px auto;
+    border-radius: 10px;
+}
+.login-label{
+    width:150px;
+    height:30px;
+    text-align: right;
+    padding-right: 10px;
+}
+.login-input{
+    width:230px;
+    border:none;
+    border-radius: 5px;
+    height:30px;
+}
+.login-input:focus{
+    border:1px double #006699;
+}
+.help-block{
+    width:100px !important;
+    float: right;
+}
+.help-block:nth-child(1){
+    margin-top: 80px;
+}
+.btn-login{
+    width:100px;
+    font-weight: bold;
+    margin-left: 200px;
+    text-align: center;
+}
+/*******主页布局*******/
+#div-body{
+    width:100%;
+    border-top:1px solid #ffffff;
+    background: -webkit-linear-gradient(#ffffff, #999999); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#ffffff, #999999); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#ffffff, #999999); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#ffffff, #999999); /* 标准的语法 */
+}
+#div-left{
+    width:220px;
+    height:100%;
+    float: left;
+    border-right: 1px solid #999999;
+}
+#div-left li{
+    width: 100%;
+    height:30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+}
+#div-left li:nth-child(1),#div-item{
+    background-color: #006699;
+}
+#div-left li:nth-child(1){
+    color:#ffffff;
+    height:36px;
+    line-height: 35px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+.li-nav:hover{
+    background-color: #CCCCCC !important;
+}
+.li-nav-click{
+    background-color: #CCCCCC !important;
+}
+.li-nav span{
+    display: block;
+    float: left;
+    height: 100%;
+}
+.nav-first-level span:nth-child(1){
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.nav-first-level span:nth-child(2){
+    width: 22px;
+    line-height: 25px;
+    text-align: left;
+}
+.nav-first-level span:nth-child(3){
+    overflow: hidden;
+    width:170px;
+}
+.nav-second-level{
+    display:none;
+    padding-left: 25px;
+    float: right;
+}
+.nav-second-level span{
+    display: block;
+    float: left !important;
+}
+.nav-second-level span:nth-child(1){
+    width:22px;
+    line-height: 27px;
+}
+.nav-second-level span:nth-child(2){
+    overflow: hidden;
+    width:170px;
+    padding-left: 5px;
+}
+#div-right{
+    height:100%;
+    float: left;
+    border-left:none;
+    overflow: hidden;
+}
+ #div-item{
+    width:100%;
+    min-height:35px;
+    height: auto;
+    display: table;
+}
+.item-focus{
+    height: 32px !important;
+    border: none !important;
+    color: #006699 !important;
+}
+#div-item li{
+    float: left;
+    width:120px;
+    height: 32px;
+    display: block;
+    margin: 3px auto auto 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2px solid #006699;
+    background-color: #f2f2f2;
+    line-height: 32px;
+    text-align: center;
+}
+#div-item li:hover{
+    background-color: #CCCCCC;
+}
+#div-item li span{
+    float: left;
+}
+#div-item li span:nth-child(1){
+    margin: auto 2px auto 2px;
+    width:100px;
+    overflow: hidden;
+}
+#div-item li span:nth-child(2){
+    width:15px;
+    cursor: pointer;
+    height:15px !important;;
+    line-height: 15px;
+    font-size: 17px;
+    display: block;
+    color: #999999;
+}
+#div-item li span:nth-child(2):hover{
+    background-color: #f2f2f2;
+}
+#div-item li span:nth-child(3){
+    width:15px;
+    cursor: pointer;
+    height:15px !important;;
+    line-height: 15px;
+    font-size: 12px;
+}
+#div-item li span:nth-child(3):hover{
+    background-color: #f2f2f2;
+}
+#div-iframe{
+    width:100%;
+    height: 96%;
+    margin: 2px auto auto auto;
+}
+#div-iframe iframe{
+    float: left;
+    width:100%;
+    height: 100%;
+    border:none;
+    display: none;
+}
+
