@@ -8,7 +8,7 @@ CommonAsset::register($this);
     ?>
 </div>
 <div id="index-module"></div>
-<div id="div-body">
+<div id="div-body" class="shade">
     <div id="div-left">
         <li>《&nbsp;导&nbsp;航&nbsp;栏&nbsp;》</li>
         <li class="li-nav nav-first-level" data-key="key_0">

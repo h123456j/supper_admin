@@ -4,7 +4,7 @@ CommonAsset::register($this);
 
 echo \app\extension\widget\LoadingWidget::widget([]);
 ?>
-<div id="login-module">
+<div id="login-module" class="shade">
     <div id="div-login">
         <?php
         $form = \yii\bootstrap\ActiveForm::begin([
